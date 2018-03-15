@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>婚礼主持-北京UMC主持人官网</title>
+    <meta name="keywords" content=" ">
+    <meta name="description" content=" ">
+    <script type="text/javascript" src="http://www.umc1314.com/skin/default/js/swiper.min.js"></script>
+
+    <link rel="stylesheet" href="http://www.umc1314.com/skin/default/css/css.css">
+    <link rel="stylesheet" type="text/css" href="http://www.umc1314.com/skin/default/css/base.css">
+
+    <link rel="stylesheet" type="text/css" href="http://www.umc1314.com/skin/default/css/page.css">
+
+    <link rel="shortcut icon" type="image/x-icon" href="http://www.umc1314.com/skin/default/images/favicon.ico">
+
+    <link href="http://libs.baidu.com/fontawesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+
+    <script src="http://www.umc1314.com/skin/default/js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+
+    <script src="http://www.umc1314.com/skin/default/js/main.js" type="text/javascript" charset="utf-8"></script>
+
+    <script src="http://www.umc1314.com/skin/default/js/jquery.roundabout.js"></script>
+
+    <script language="javascript" type="text/javascript" src="http://www.umc1314.com/skin/default/DatePicker/WdatePicker.js"></script>
+
+    <meta name="baidu-site-verification" content="45nuOhR1CL" />
+
+</head>
+<body>
+<script type="text/javascript">
+    var site_dir = "/";
+</script>
+<div class="header">
+    <div class="topbar">
+        <div class="w1000 clearfix">
+            <div class="name fl">欢迎来到UMC主持人网站！</div>
+            <p class="number fr">客服热线： 138-1171-4883&nbsp;&nbsp;185-0006-7427</p>
+        </div>
+    </div>
+    <div class="logo_box">
+        <div class="w1000 pr clearfix">
+            <p class="logo pa"><a href="/"><img src="/skin/default//images/logo.png"/></a></p>
+            <div class="top_member clearfix pa" id="member_login">
+                <script type="text/javascript">member_login('member_login', 'member/ajax_login.html');</script>
+            </div>
+        </div>
+    </div>
+    <div class="nav w1000 clearfix">
+        <ul class="clearfix">
+            <li class="fl "><a href="/">首 页</a></li>
+            <li class="fl "><a href="/index.php?c=article&a=type&tid=194">关于UMC</a></li>
+
+            <li class="fl "><a href="/index.php?c=article&a=type&tid=195">婚礼主持</a></li>
+
+            <li class="fl current"><a href="/index.php?c=article&a=type&tid=196">商务主持</a></li>
+
+            <li class="fl "><a href="/index.php?c=article&a=type&tid=197">主持人团队</a></li>
+
+            <li class="fl "><a href="/index.php?c=article&a=type&tid=198">新闻动态</a></li>
+
+            <li class="fl "><a href="/index.php?c=article&a=type&tid=199">培训学院</a></li>
+
+        </ul>
+    </div>
+</div>
+<div class="load" id="load">
+    <div class="cont pa">
+        <form action="index.php?c=member&a=login&go=1&url=?c=member" method="post">
+            <div class="box">
+                <input type="text" name="user" id="tel" value="" placeholder="手机号 / 公司名称 / 联系人">
+                <input type="password" name="pass" id="pass" value="" placeholder="密码">
+                <div class="clearfix xq">
+                    <div class="deng fl"><label for="deng"><input type="checkbox" name="rmbUser" id="ck_rmbUser" value=""> 下次自动登录</label></div>
+                    <div class="fr"><a href="/index.php?c=member&amp;a=reg">立即注册</a><i> | </i><a href="/index.php?c=member&amp;a=retrieve_password">忘记密码</a></div>
+                </div>
+                <input type="submit" id="" name="submit" onclick="Save()" value="登录">
+            </div>
+        </form>
+        <p class="close pa" style="right:4px"><img src="/skin/default/images/sch_cont_pic3.png"></p>
+    </div>
+</div>
+
+<div class="er_wrap">
+    <div class="er_ban" style="background-image: url(/uploads/2016/01/161442554971.jpg); height: 354px;margin: 0;"></div>
+    <div class="host">
+        <style type="text/css">
+            ::-webkit-input-placeholder { /* WebKit browsers */
+                font-size:100%;
+                color: #333;
+            }
+            :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+                font-size:100%;
+                color: #333;
+            }
+            ::-moz-placeholder { /* Mozilla Firefox 19+ */
+                font-size:100%;
+                color: #333;
+            }
+            :-ms-input-placeholder { /* Internet Explorer 10+ */
+                font-size:100%;
+                color: #333;
+            }
+            .in_wrap .box1 input[type=text]{font-size: 16px;}
+
+        </style>
+        <script>
+            function checksearch(){
+
+                var compere_date=$("#compere_date").val();
+                var compere_time=$("#compere_time").val();
+                if(compere_date!=''&&compere_time=='')
+                {
+                    alert("请选择主持时间");
+                    return false;
+                }
+                if(compere_time!=''&&compere_date=='')
+                {
+                    alert("请选择主持日期");
+                    return false;
+                }
+                return true;
+            }
+        </script>
+        <div class="box1">
+            <div class="w1000 clearfix" style="width:518px;font-size: 16px;">
+                <form action="/index.php?a=search" method="post" onsubmit="return checksearch();">
+                    <input type="hidden" name="c" value="article" />
+                    <input type="hidden" name="tid" value="197" />
+                    <input type="hidden" name="gid" value="" />
+                    <input type="hidden" name="discount" value="" />
+                    <input type="hidden" name="compere_type" id="compere_type" value="" />
+                    <input type="hidden" name="compere_price" id="compere_price" value="" />
+                    <input type="hidden" name="compere_time" id="compere_time" value="" />
+                    <!-- <div class="select_box fl pr" style="width: 163px;height: 40px;margin-right: 30px;">
+                        <div class="select fl pa" id="type" style="margin-right:0;">
+                            <h2 data-type=''>主持类型</h2>
+                            <p data-type="wedding">婚礼主持</p>
+                            <p data-type="business">商务主持</p>
+                        </div>
+                    </div> -->
+
+                    <div class="select_box fl pr" style="width: 190px;height: 40px;margin-right: 30px; display:none" >
+                        <div class="select fl pa" id="price" style="margin-right:0;width:170px; background: #FFF url(/skin/default//images/select_bg.png) no-repeat 140px 6px;">
+                            <h2 data-type=''>主持价位</h2>
+
+                            <p data-type='3'>首席6000-10000</p>
+
+                            <p data-type='2'>资深4000-6000</p>
+
+                            <p data-type='1'>专业2000-4000</p>
+                            <!-- <p class="business" data-type='1'>2000-4000</p> -->
+                        </div>
+                    </div>
+
+                    <input class="select fl pr Wdate" type="text" name="compere_date" id="compere_date" value="" placeholder="主持日期" style="width:145px;font-family: inherit;line-height:38px;" onfocus="WdatePicker({minDate:'%y-%M-{%d+1}',maxDate:'2018-12-31'})">
+                    <div class="select_box fl pr" style="width: 163px;height: 40px;margin-right: 30px;">
+                        <div class="select fl pa " id="time" style="margin-right:0;">
+                            <h2>主持时间</h2>
+                            <p data-type="m">上午</p>
+                            <p data-type="a">下午</p>
+                            <p data-type="n">晚上</p>
+                        </div>
+                    </div>
+
+                    <!-- <input type="text" name="title" id="" value="主持人" style="font-family: inherit;" onfocus="if (value =='主持人'){value =''}" class="db fl" /> -->
+                    <input type="submit" id="" name="" value="搜索" style="font-weight: bold;" class="db fl"/>
+                </form>
+            </div>
+        </div>
+        <script type="text/javascript">
+            /*	select1('.box1 .select:eq(0)');
+                select1('.box1 .select:eq(3)');*/
+            var s;
+            $('#type p').click(function() {
+                s = $(this).attr('data-type');
+                $('#compere_type').attr('value',s);
+            });
+            $('#price p').click(function() {
+                var p = $(this).attr('data-type');
+                var d = $('#price p').toggle('data-type');
+                $('#compere_price').attr('value',p);
+            });
+            $('#time p').click(function() {
+
+                var t = $(this).attr('data-type');
+                $('#compere_time').attr('value',t);
+            });
+
+            $(function(){
+                //传值添加状态
+                var p = '' ? '' : 0;
+                var t = '' ? '' : 0;
+                if (p) {
+                    $('#price p').each(function(){
+                        if ($(this).attr('data-type') == p) {
+                            $('#price h2').html($(this).text());
+                        };
+                    });
+                }
+                if (t) {
+                    $('#time p').each(function(){
+                        if ($(this).attr('data-type') == t) {
+                            $('#time h2').html($(this).text());
+                        };
+                    });
+                }
+
+            });
+
+
+            /*	$('.box1 .select:eq(0) p').click(function(){
+                select2(s);
+            });*/
+
+            /*function select1(name){//模拟下拉菜单
+                var name = $(name);
+                name.click(function(){
+                    $(this).find('p').show();
+                });
+                name.hover(function(){},function() {
+                    $(this).find('p').hide();
+                });
+                name.find('p').click(function(){
+                    var val = $(this).html();
+                    $(this).parent('.select').find('h2').html(val);
+                });
+            };
+            function select2(size){//模拟下拉菜单+
+                $('.box1 .select').eq(1).find('p').hide();
+                $('.box1 .select').eq(1).click(function(){
+                    if(size==1){
+                        $(this).find('p.wedding').show();
+                        $(this).find('p.business').hide();
+                    }else if(size==2){
+                        $(this).find('p.wedding').hide();
+                        $(this).find('p.business').show();
+                    }
+                });
+                $('.box1 .select').eq(1).hover(function(){},function() {
+                    $(this).find('p').hide();
+                });
+                $('.box1 .select').eq(1).find('p').click(function(){
+                    var val = $(this).html();
+                    $(this).parent('.select').find('h2').html(val);
+                });
+            };*/
+
+        </script>
+        <style>
+            .link_more{
+
+                font-size: 15px;
+                font-weight: bolder;
+                background: #E38914;
+                line-height: 26px;
+                color: #FFF;
+                width: 70px;
+                text-align: center;
+                border-radius: 12px;
+                margin-top: 10px;
+            }
+
+        </style>
+
+        <!-- 登录后的公司价格 -->
+
+
+
+        <div class="title clearfix w1000">
+            <h2 class="fl">
+                首席主持人(￥6000-10000)</h2>
+            <a href="/index.php?c=article&a=compere_all&comptype=2&price=3" class="fr link_more mr20" style="color:#FFF;font-family: initial;">更多>></a>
+            <p class="fr pag clearfix"><a href="javascript:;" class="prev fl db"><</a><a href="javascript:;" class="next fl db">></a></p>
+        </div>
+        <div class="list clearfix w1000">
+            <ul class="clearfix">
+
+
+
+
+                <li class="fl">
+                    <div class="pic"><a href="/index.php?c=article&id=930&type=business"  target="_blank"><img src="/uploads/2018/01/261732584417.jpg" alt="帅杰"></a></div>
+                    <div class="txt clearfix"><a href="/index.php?c=article&id=930&type=business" target="_blank">
+                        <h2 style="line-height:30px">帅杰</h2>
+                        <p class="money" style="line-height:30px">主持价格:8000元</p>
+                    </a></div>
+                </li>
+
+
+                <li class="fl">
+                    <div class="pic"><a href="/index.php?c=article&id=928&type=business"  target="_blank"><img src="/uploads/2018/01/261733451284.jpg" alt="李阳"></a></div>
+                    <div class="txt clearfix"><a href="/index.php?c=article&id=928&type=business" target="_blank">
+                        <h2 style="line-height:30px">李阳</h2>
+                        <p class="money" style="line-height:30px">主持价格:8000元</p>
+                    </a></div>
+                </li>
+
+
+                <li class="fl">
+                    <div class="pic"><a href="/index.php?c=article&id=991&type=business"  target="_blank"><img src="/uploads/2017/09/011534443588.jpg" alt="张驭夫"></a></div>
+                    <div class="txt clearfix"><a href="/index.php?c=article&id=991&type=business" target="_blank">
+                        <h2 style="line-height:30px">张驭夫</h2>
+                        <p class="money" style="line-height:30px">主持价格:7000元</p>
+                    </a></div>
+                </li>
+
+
+                <li class="fl">
+                    <div class="pic"><a href="/index.php?c=article&id=1018&type=business"  target="_blank"><img src="/uploads/2016/06/131651327417.jpg" alt="刘咏"></a></div>
+                    <div class="txt clearfix"><a href="/index.php?c=article&id=1018&type=business" target="_blank">
+                        <h2 style="line-height:30px">刘咏</h2>
+                        <p class="money" style="line-height:30px">主持价格:6000元</p>
+                    </a></div>
+                </li>
+
+
+
+        </div>
+
+
+        <div class="title clearfix w1000">
+            <h2 class="fl">
+                资深主持人(￥4000-6000)</h2>
+            <a href="/index.php?c=article&a=compere_all&comptype=2&price=2" class="fr link_more mr20" style="color:#FFF;font-family: initial;">更多>></a>
+            <p class="fr pag clearfix"><a href="javascript:;" class="prev fl db"><</a><a href="javascript:;" class="next fl db">></a></p>
+        </div>
+        <div class="list clearfix w1000">
+            <ul class="clearfix">
+
+
+
+
+                <li class="fl">
+                    <div class="pic"><a href="/index.php?c=article&id=997&type=business"  target="_blank"><img src="/uploads/2016/05/032237361517.jpg" alt="金鑫"></a></div>
+                    <div class="txt clearfix"><a href="/index.php?c=article&id=997&type=business" target="_blank">
+                        <h2 style="line-height:30px">金鑫</h2>
+                        <p class="money" style="line-height:30px">主持价格:5000元</p>
+                    </a></div>
+                </li>
+
+
+                <li class="fl">
+                    <div class="pic"><a href="/index.php?c=article&id=996&type=business"  target="_blank"><img src="/uploads/2017/12/311557271652.jpg" alt="迎诚"></a></div>
+                    <div class="txt clearfix"><a href="/index.php?c=article&id=996&type=business" target="_blank">
+                        <h2 style="line-height:30px">迎诚</h2>
+                        <p class="money" style="line-height:30px">主持价格:5000元</p>
+                    </a></div>
+                </li>
+
+
+                <li class="fl">
+                    <div class="pic"><a href="/index.php?c=article&id=1023&type=business"  target="_blank"><img src="/uploads/2016/08/221720174782.jpg" alt="魏传旭"></a></div>
+                    <div class="txt clearfix"><a href="/index.php?c=article&id=1023&type=business" target="_blank">
+                        <h2 style="line-height:30px">魏传旭</h2>
+                        <p class="money" style="line-height:30px">主持价格:4000元</p>
+                    </a></div>
+                </li>
+
+
+                <li class="fl">
+                    <div class="pic"><a href="/index.php?c=article&id=1028&type=business"  target="_blank"><img src="/uploads/2018/01/261630209552.jpg" alt="李一罕"></a></div>
+                    <div class="txt clearfix"><a href="/index.php?c=article&id=1028&type=business" target="_blank">
+                        <h2 style="line-height:30px">李一罕</h2>
+                        <p class="money" style="line-height:30px">主持价格:4000元</p>
+                    </a></div>
+                </li>
+
+
+                <li class="fl">
+                    <div class="pic"><a href="/index.php?c=article&id=1039&type=business"  target="_blank"><img src="/uploads/2017/01/141758298317.jpg" alt="  李恩"></a></div>
+                    <div class="txt clearfix"><a href="/index.php?c=article&id=1039&type=business" target="_blank">
+                        <h2 style="line-height:30px">  李恩</h2>
+                        <p class="money" style="line-height:30px">主持价格:4000元</p>
+                    </a></div>
+                </li>
+
+
+                <li class="fl">
+                    <div class="pic"><a href="/index.php?c=article&id=1016&type=business"  target="_blank"><img src="/uploads/2018/01/261727046290.jpg" alt="刘康康"></a></div>
+                    <div class="txt clearfix"><a href="/index.php?c=article&id=1016&type=business" target="_blank">
+                        <h2 style="line-height:30px">刘康康</h2>
+                        <p class="money" style="line-height:30px">主持价格:4000元</p>
+                    </a></div>
+                </li>
+
+
+                <li class="fl">
+                    <div class="pic"><a href="/index.php?c=article&id=1019&type=business"  target="_blank"><img src="/uploads/2017/08/161826361412.jpg" alt="宇晨"></a></div>
+                    <div class="txt clearfix"><a href="/index.php?c=article&id=1019&type=business" target="_blank">
+                        <h2 style="line-height:30px">宇晨</h2>
+                        <p class="money" style="line-height:30px">主持价格:4000元</p>
+                    </a></div>
+                </li>
+
+
+
+        </div>
+
+
+        <div class="title clearfix w1000">
+            <h2 class="fl">
+                专业主持人(￥2000-4000)</h2>
+            <a href="/index.php?c=article&a=compere_all&comptype=2&price=1" class="fr link_more mr20" style="color:#FFF;font-family: initial;">更多>></a>
+            <p class="fr pag clearfix"><a href="javascript:;" class="prev fl db"><</a><a href="javascript:;" class="next fl db">></a></p>
+        </div>
+        <div class="list clearfix w1000">
+            <ul class="clearfix">
+
+
+
+
+                <li class="fl">
+                    <div class="pic"><a href="/index.php?c=article&id=1044&type=business"  target="_blank"><img src="/uploads/2017/04/101120394021.jpg" alt="曼卿"></a></div>
+                    <div class="txt clearfix"><a href="/index.php?c=article&id=1044&type=business" target="_blank">
+                        <h2 style="line-height:30px">曼卿</h2>
+                        <p class="money" style="line-height:30px">主持价格:3000元</p>
+                    </a></div>
+                </li>
+
+
+
+        </div>
+
+
+
+
+
+
+
+    </div>
+</div>
+
+<div class="footer">
+    <div class="scroll_top">
+        <p><img src="/skin/default//images/footer_top.png" width="116"/></p>
+    </div>
+    <div class="cont">
+        <div class="w1000 clearfix">
+            <div class="left fl">
+                <div class="link clearfix">
+                    <a href="/index.php?c=article&a=type&tid=194" class="fl">关于UMC</a><i class="fl">|</i>
+                    <a href="/index.php?c=article&a=type&tid=195" class="fl">婚礼主持</a><i class="fl">|</i>
+                    <a href="/index.php?c=article&a=type&tid=196" class="fl">商务主持</a><i class="fl">|</i>
+                    <a href="/index.php?c=article&a=type&tid=197" class="fl">主持人团队</a><i class="fl">|</i>
+                </div>
+                <div class="txt">
+                    <dl>
+                        <dt style="background-image: url(/skin/default//images/footer_pic1.png);">监督服务电话</dt>
+                        <dd> 138-1171-4883&nbsp;&nbsp;185-0006-7427</dd>
+                    </dl>
+                    <dl>
+                        <dt style="background-image: url(/skin/default//images/footer_pic2.png);"> 公司地址：北京市朝阳区后现代城9号楼1315                        </dt>
+                    </dl>
+                </div>
+            </div>
+            <div class="right fr">
+                <h2>关注我们</h2>
+                <ul class="clearfix">
+                    <li class="fl"><img src="/uploads/2017/12/311651523123.jpg"/><p>官方微博</p></li>
+                    <li class="fl"><img src="/uploads/2017/12/311652176160.jpg"/><p>官方微信</p></li>
+                    <li class="fl"><img src="/uploads/2017/12/311652364682.jpg"/><p>微信交流群</p></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <span><a href="http://www.miibeian.gov.cn/" rel="nofollow">京ICP备15045197号-2 &nbsp; 版权所有：北京东方造梦者文化传播有限公司</a>
+			<script src="http://s4.cnzz.com/stat.php?id=1257164808&web_id=1257164808" language="JavaScript"></script></span>
+        </div>
+    </div>
+</div>
+</body>
+</html>
